@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(0, 17, 255),rgb(27, 216, 191));
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form{
+    width:400px;
+    margin: 19vh auto 0 auto;
+    background-color: whitesmoke;
+    padding: 30px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 17, 255);
+}
+
+#form button{
+    background-image: linear-gradient(to right,rgb(0, 17, 255),rgb(27, 216, 191));
+    border: 1px solid;
+    color: white;
+   /* border-image: linear-gradient(to bottom,rgb(0, 17, 255),rgb(27, 216, 191));*/
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(0, 17, 255);
+}
+
+.input input:focus{
+    outline: 0;
+}
+
+.input .error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.success input{
+    border-color: #0cc477;
+}
+
+.error input{
+    border-color: red;
+}
+
+.login{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.login a{   
+    color: black;
+    text-decoration: none;
+}
+
+@media  screen and (max-width:400px) {
+    .container{
+        flex-wrap: wrap;
+    }
+
+    #form{
+        width: 300px;
+    }
+    .input input{
+        font-size: 17px;
+    }
+}
